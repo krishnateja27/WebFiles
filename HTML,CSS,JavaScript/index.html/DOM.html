@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>My new title</title>
+</head>
+
+<body>
+    <h1 onclick="this.innerHTML = 'HI'">Change this</h1>
+    <div id="container">
+        <div id="animate"></div>
+    </div>
+    <div>
+        <p id="demo">Hi click on me</p>
+    </div>
+    <p id='demo2'>The content will be changed when you click on first para.</p>
+    <p id='demo3'></p>
+    <p id='demo4'></p>
+    <p id='demo5'></p>
+    <p id='demo6'></p>
+    <p id='demo7'></p>
+    <p id='demo8'></p>
+    <p id='demo9'></p>
+    <p id='demo10'></p>
+    <p id='demo11'></p>
+    <p id='demo12'></p>
+    <p id='demo13'></p>
+    <p id='demo14'></p>
+    <p id='demo15'></p>
+    Enter name: <input type = "text" name = "customer"/> 
+    <style>
+        #container {
+            width: 400px;
+            height: 400px;
+            position: relative;
+            background: yellow;
+        }
+
+        #animate {
+            width: 50px;
+            height: 50px;
+            position: absolute;
+            background: red;
+        }
+    </style>
+    <script>
+        var id = setInterval(frames, 5);
+        var pos = 0;
+        var x = document.getElementById('animate');
+        function frames() {
+            if (pos == 350) {
+                clearInterval(id);
+            }
+            else {
+                pos++;
+                x.style.top = pos + 'px';
+                x.style.left = pos + 'px';
+            }
+        }
+        document.getElementById('demo').addEventListener('click', myFunction1);
+        function myFunction1() {
+            document.getElementById('demo2').innerHTML = 'Content is changed.'
+        }
+        document.cookie = "Name=John Smith; expires=Thu, 18 Dec 2018 12:00:00 UTC; path=/";
+        var x1 = document.cookie;
+        document.getElementById('demo3').innerHTML = x1;
+        
+    </script>
+</body>
+
+</html>

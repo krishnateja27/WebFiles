@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>New demo</title>
+</head>
+
+<body style="background-color:white">
+    <!-- How do we use region is just to use to cntl + space -->
+    <!-- All the header tags are bold and they are used for heading only-->
+    <!--  -->
+    <h2>
+        Hi this is my first html page after a long time.
+    </h2>
+    <h3>We shall try to improvise the code.</h3>
+    <p>The purpose of a web browser (Chrome, IE, Firefox, Safari) is to read HTML documents and display them.
+
+        The browser does not display the HTML tags, but uses them to determine how to display the document:</p>
+
+    <h1>This is h1 tag.</h1>
+    <h2>This is a nice h2 tag.</h2>
+    <h3>This is a h3 tag.</h3>
+    <h4>This is a h4 tag.</h4>
+    <h5>This is a h5 tag.</h5>
+    <h6>This is a h6 tag.</h6>
+
+    <p>Is 10 &gt; 20</p>
+    <a href="https://www.facebook.com">This is fb link.</a>
+    <br>
+    <img src="pictures/pic1.jpg" alt="D:\HTML,CSS,JavaScript\image2.jpg" width="200" height="150">
+    <br>
+
+    <button>Click me!!!</button>
+    <br>
+    <p>&copy; Microsoft 2018.</p>
+    <br>
+    Hello &nbsp; there!!!
+    <p>An unordered html content</p>
+    <br>
+    <img src="D:\HTML,CSS,JavaScript\image2.jpg" alt="D:\HTML,CSS,JavaScript\image2.jpg" width="200" height="150">
+    <br>
+    <ul>
+        <li>Hindi</li>
+        <li>Telugu</li>
+        <li>English</li>
+
+    </ul>
+    <p>An ordered html content</p>
+    <ol type="i">
+        <li>Hindi</li>
+        <li>Telugu</li>
+        <li>English</li>
+    </ol>
+    <pre>
+       This a pre formatted text.
+       So it will appear as it is.
+   </pre>
+    <i>
+        This is a italic text.
+    </i>
+    <br>
+    <em>This text is emphasized.</em>
+    <div>Hello</div>
+    <div>World</div>
+    <p>We are going to write a quote now</p>
+    <p><q>Empty vessels make more noise.</q></p>
+    <p> <abbr title="National Institute of Technology Warangal">NITW</abbr>was founded in 1969.</p>
+    <table style="width:100%">
+        <tr>
+            <th style="text-align: left">
+                first Name
+            </th>
+            <th style="text-align: left">
+                second Name
+            </th>
+            <th style="text-align: left">
+                last Name
+            </th>
+        </tr>
+        <tr>
+            <td>
+                Krishna
+            </td>
+            <td>
+                Teja
+            </td>
+            <td>
+                Thirukovela
+            </td>
+        </tr>
+    </table>
+    <span>Hello</span>
+    <span>World</span>
+    <p>The SPAN element is an inline element, and will not start on a new line.</p>
+    <br>
+    <div class="checkbox1">
+        <input type="text" name="sometext" id="rand_id" frameborder="0" placeholder="Enter your name.">
+    </div>
+    <br>
+    <input type="checkbox" name="checkbox" id="ch_id">
+    <label for="ch_id" It is a checkbox></label>
+    <!-- <iframe src="index2.html" style="border:blue;" name="iframe_a" height="300px" width="100%"></iframe> -->
+    <!-- <p><a href="https://www.w3schools.com" target="iframe_a">W3Schools</a></p> -->
+    <!-- <iframe height="300px" width="100%" src="https://www.facebook.com" name="iframe_a"></iframe> -->
+
+    <!-- <p><a href="https://www.w3schools.com" target="iframe_a">W3Schools.com</a></p> -->
+
+    <!-- <p>When the target of a link matches the name of an iframe, the link will open in the iframe.</p> -->
+    <iframe src="index2.html">
+        This browser doesnot support iframe content.
+    </iframe>
+    <iframe src="index3.html">
+        This browser doesnot support iframe content.
+    </iframe>
+    <br>
+    <a href="https://www.google.co.in">google</a>
+    <br>
+    <!-- <iframe width="560" height="315" src="//www.youtube.com/embed/C8kSrkz8Hz8" frameborder="0" allowfullscreen></iframe>  -->
+    <iframe width="420" height="345" src="//www.google.co.in" frameborder="0" allowfullscreen></iframe>
+    <iframe src="https://www.w3schools.com">
+        <p>Your browser does not support iframes.</p>
+    </iframe>
+    <p id="krishna">This content is going to change.</p>
+    <button type="button" onclick=myFunction()>Click me</button>
+    <details>
+        <summary>
+            This is the summary tag and will not be seen in the browser.
+        </summary>
+    </details>
+    <!-- 
+    # means moves to top of the page.
+    and #! means the anchor tag does nothing.
+    -->
+    <button class="box effect1">
+        <h3>Effect 1</h3>
+    </button>
+    <button class="btn1">Hover Over Me</button>
+    <button class="btn">Hover Over Me</button>
+    <nav>
+        <ul>
+            <li><a href="#">London</a></li>
+            <li><a href="#">Paris</a></li>
+            <li><a href="#">Tokyo</a></li>
+        </ul>
+    </nav>
+
+</body>
+<style>
+    .effect1:hover {
+        -webkit-box-shadow: 0 10px 6px -6px #777;
+        -moz-box-shadow: 0 10px 6px -6px #777;
+        box-shadow: 0 10px 6px -6px #777;
+    }
+
+    .btn1 {
+        background-color: #ddd;
+        border: none;
+        color: black;
+        padding: 16px 32px;
+        text-align: center;
+        font-size: 16px;
+        margin: 4px 2px;
+        transition: 0.3s;
+    }
+
+    .btn1:hover {
+        background-color: #3e8e41;
+        color: white;
+    }
+
+    .btn {
+        background-color: #f4511e;
+        border: none;
+        color: white;
+        padding: 16px 32px;
+        text-align: center;
+        font-size: 16px;
+        margin: 4px 2px;
+        opacity: 0.6;
+        transition: 0.3s;
+    }
+
+    .btn:hover {
+        opacity: 1
+    }
+    .checkbox1 {
+        width: 2500px
+    }
+</style>
+<script>
+    function myFunction() {
+        document.getElementById("krishna").innerHTML = "Hi this is krishna.";
+    }
+</script>
+
+</html>
