@@ -1,35 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
 </head>
+
 <body>
-    <form name = "myform"> 
-        <input type = "text" name = "stage" size = "20" /> 
-     </form> 
-     
-     <!-- Create  Mappings --> 
-     <img src = "//images/usemap.gif" alt = "HTML Map" 
-        border = "0" usemap = "#tutorials"/> 
-     <map name = "tutorials"> 
-        <area shape = "poly" 
-           coords = "74,0,113,29,98,72,52,72,38,27" 
-           href = "/perl/index.htm" alt = "Perl Tutorial" 
-           target = "_self" 
-           onMouseOver = "showTutorial('perl')" 
-           onMouseOut = "showTutorial('')"/>
-        <area shape = "rect"   
-           coords = "22,83,126,125"  
-           href = "/html/index.htm" alt = "HTML Tutorial" target = "_self"   
-           onMouseOver = "showTutorial('html')"         
-           onMouseOut = "showTutorial('')"/>  
-        <area shape = "circle"  coords = "73,168,32"  
-           href = "/php/index.htm" alt = "PHP Tutorial" target = "_self"   
-           onMouseOver = "showTutorial('php')"       
-           onMouseOut = "showTutorial('')"/> 
-     </map> 
+    <!-- <form name="myform">
+        <input type="text" name ="myId" size="20" />
+    </form>
+
+    Create  Mappings 
+    <img src="//images/usemap.gif" alt="HTML Map" border="0" usemap="#tutorials" />
+    <map name="tutorials">
+        <area shape="poly" coords="74,0,113,29,98,72,52,72,38,27" href="/perl/index.htm" alt="Perl Tutorial" target="_self"
+            onMouseOver="showTutorial('perl')" onMouseOut="showTutorial('')" />
+        <area shape="rect" coords="22,83,126,125" href="/html/index.htm" alt="HTML Tutorial" target="_self" onMouseOver="showTutorial('html')"
+            onMouseOut="showTutorial('')" />
+        <area shape="circle" coords="73,168,32" href="/php/index.htm" alt="PHP Tutorial" target="_self" onMouseOver="showTutorial('php')"
+            onMouseOut="showTutorial('')" />
+    </map> -->
+    <form name="myForm">
+        <input type="text" name="myInput" size="30">
+        <br>
+    </form>
+    <br>
+    <img src="pictures/pic1.jpg" alt="pictures/pic2.jpg" border="0" usemap="#rename">
+    <map name="rename">
+        <area shape="poly" coords="74,0,113,29,98,72,52,72,38,27" href="pictures/pic2.jpg" alt="Perl Tutorial" target="_self"
+            onMouseOver="showTutorial('perl')" onMouseOut="showTutorial('')" />
+    </map>
+    <script>
+        function showTutorial(name) {
+            document.myForm.myId.value = name;
+        }  
+    </script>
 </body>
+
 </html>

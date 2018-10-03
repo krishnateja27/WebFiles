@@ -1,0 +1,11 @@
+In JS, indexOf and lastIndexOf return -1 if the element is not found.
+The second parameter in lastIndexOf starts from last.
+In indexOf it starts from first.
+In JS, the count starts from zero.
+In slice method of js the syntax is
+slice(start,end)
+
+start pos will read from the start pos till (end-1).
+Incase of negative numbering the numbers will start to be read from back(reverse dir).
+Incase of a single parameter to slice the input will be from the start end,i.e, slicing takes place from 
+0 to start-1 and output will be from start index to end of string.

@@ -148,7 +148,7 @@
             <li><a href="#">Tokyo</a></li>
         </ul>
     </nav>
-
+    <p demo = '111'></p>
 </body>
 <style>
     .effect1:hover {
@@ -193,6 +193,10 @@
     }
 </style>
 <script>
+    window.onload = function constFunc(){
+        const hig = "Krishna";
+    document.getElementById('111').innerHTML = hig; 
+    }
     function myFunction() {
         document.getElementById("krishna").innerHTML = "Hi this is krishna.";
     }
